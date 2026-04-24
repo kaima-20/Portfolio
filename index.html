@@ -6,12 +6,13 @@
 <meta name="description" content="Front-End Developer Portfolio">
 <meta name="author" content="Omeje Chikaima">
 <title>Portfolio</title>
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon.ico">
+
 <style>
 body{
-    background:#0f0f10;
+    background: #141012;
     color:#f5f5f5;
     font-family:'Poppins', sans-serif;
 }
@@ -20,12 +21,15 @@ body{
 }
 
 .navbar-brand{
-    background:#1a1a1d;
+    background:#1b1b20;
     padding:10px 15px;
     border-radius:50%;
+    color:#f7c6d9;
+    font-weight:600;
 }
+
 .nav-box{
-    background:#1a1a1d;
+    background:#1b1b20;
     padding:10px 25px;
     border-radius:30px;
     display:flex;
@@ -33,92 +37,147 @@ body{
 }
 
 .nav-box a{
-    color:#b3a8ad;
+    color:#b8b8b8;
     text-decoration:none;
+    font-size:14px;
 }
 
 .nav-box a:hover{
-    color:#d16a8c;
+    color:#f7c6d9;
 }
+
 .btn-talk{
-    background:#1a1a1d;
+    background:#1b1b20;
+    color:#f7c6d9;
     border-radius:20px;
-    color:#d16a8c;
+    padding:8px 18px;
+    border:1px solid #2a2a2f;
 }
 .banner{
-    padding:100px 0;
+    padding:90px 0;
 }
 
 .banner h1{
-    font-size:48px;
+    font-size:52px;
     font-weight:600;
-    color:#f3c1cf;
+    color:#f7c6d9;
 }
 
 .banner p{
-    color:#b3a8ad;
+    color:#b8b8b8;
 }
 
 .btn-dark-custom{
-    background:#d16a8c;
-    border-radius:20px;
+    background:#d88aa7;
+    border-radius:25px;
     color:white;
+    padding:10px 20px;
+    border:none;
+}
+
+.btn-dark-custom:hover{
+    background:#e09bb5;
 }
 .profile-img{
-    width:300px;
-    height:300px;
+    width:280px;
+    height:280px;
     object-fit:cover;
     border-radius:50%;
-    border:3px solid #d16a8c;
-}
-.card{
-    background:#111;
-    border-radius:15px;
-    padding:20px;
-    height:100%;
-    width:200px;
-    margin: auto;
-}
-
-.card p{
-    color:#aaa;
-}
-
-.tag{
-    display:inline-block;
-    background:#1a1a1a;
-    padding:5px 10px;
-    border-radius:10px;
-    margin:5px 5px 0 0;
-    font-size:12px;
+    border:4px solid #d88aa7;
 }
 .sect-title{
     text-align:center;
     margin-top:80px;
+    color:#f7c6d9;
+    font-weight:600;
 }
 
 .sect-2{
     text-align:center;
-    color:#aaa;
+    color:#b8b8b8;
     margin-bottom:40px;
 }
+.card{
+    background:#141417;
+    border-radius:16px;
+    padding:25px;
+    height:100%;
+    border:1px solid #222;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#d88aa7;
+}
+
+.card h5{
+    color:#f7c6d9;
+}
+
+.card p{
+    color:#b8b8b8;
+    font-size:14px;
+}
+.tag{
+    display:inline-block;
+    background:#1f1f24;
+    color:#f7c6d9;
+    padding:5px 10px;
+    border-radius:12px;
+    margin:5px 5px 0 0;
+    font-size:12px;
+    border:1px solid #2a2a2f;
+}
 .about-box{
-    background:#111;
-    padding:15px;
-    border-radius:10px;
-    text-align:center;
+    background:#141417;
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #222;
+    color:#b8b8b8;
+}
+h3{
+    color:#f7c6d9;
+    font-weight:600;
+}
+.f-sect{
+    margin-top:100px;
+    padding:60px 20px;
+    background:#111114;
+    border-top:1px solid #222;
+    border-radius:20px 20px 0 0;
+}
+
+.f-title{
+    color:#f7c6d9;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.f-text{
+    color:#b8b8b8;
+    margin-bottom:20px;
+}
+.f-copy{
+    color:#888;
+    font-size:14px;
+}
+
+.f-copy span{
+    color:#f7c6d9;
 }
 </style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container container-fluid">
 
         <!-- NAVBAR -->
         <nav class="navbar">
             <div class="container d-flex justify-content-between align-items-center">
-                <div class="navbar-brand text-white">ko</div>
+                <div class="navbar-brand">KO</div>
+
                 <div class="nav-box d-none d-lg-flex">
                     <a href="#">Home</a>
                     <a href="#">Services</a>
@@ -127,12 +186,10 @@ body{
                     <a href="#">Projects</a>
                 </div>
 
-             <button class="btn btn-talk">Let's Talk</button>
+                <button class="btn btn-talk">Let's Talk</button>
             </div>
         </nav>
-
         <div class="row align-items-center banner">
-
             <div class="col-md-6">
                 <p>I am Omeje Chikaima</p>
                 <h1>Front-End <br> Developer & Designer</h1>
@@ -143,57 +200,49 @@ body{
             <div class="col-md-6 text-center text-md-end">
                 <img src="img/k3.jpg" class="profile-img" alt="Profile">
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h2 class="sect-title">Services</h2>
-                <p class="sect-2">Designing clean scalable responsive websites</p>
-            </div>
-        </div>
+        <h2 class="sect-title">Services</h2>
+        <p class="sect-2">Designing clean scalable responsive websites</p>
 
-        <div class="row flex-nowrap g-4 mt-3">
-            <div class="col-md-3">
+        <div class="row g-4 mt-3 text-center">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <h5>Graphic Design</h5>
-                    <p>Clean layouts with the use of Adobe Photoshop and Canva.</p>
+                    <p>Clean layouts using Photoshop and Canva.</p>
                     <span class="tag">Modern</span>
-                    <span class="tag">Beautiful</span>
+                    <span class="tag">Elegant</span>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
-                    <h5>Frontend Development</h5>
-                    <p>Responsive interfaces using HTML, CSS & JS.</p>
-                    <span class="tag">Clean Code</span>
+                    <h5>Frontend Dev</h5>
+                    <p>Responsive websites using HTML, CSS & JS.</p>
+                    <span class="tag">Clean</span>
                     <span class="tag">Responsive</span>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
                     <h5>Performance</h5>
-                    <p>Fast and optimized mobile websites.</p>
+                    <p>Fast, optimized and smooth websites.</p>
                     <span class="tag">Speed</span>
                     <span class="tag">Stable</span>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card">
-                    <h5>Artificial Intelligence</h5>
-                    <p>Using AI in our world Today.</p>
-                    <span class="tag">Robotics</span>
-                    <span class="tag">Technology</span>
+                    <h5>AI Concepts</h5>
+                    <p>Modern integration of AI ideas in design.</p>
+                    <span class="tag">Smart</span>
+                    <span class="tag">Future</span>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="sect-title">About Me</h2>
-                <p class="sect-2">I build clean, modern and responsive digital experiences.</p>
-            </div>
-        </div>
+        <h2 class="sect-title">About Me</h2>
+        <p class="sect-2">I build clean, modern and responsive digital experiences.</p>
+
         <div class="row text-center g-3">
             <div class="col-md-4">
                 <div class="about-box">01 Understand Users</div>
@@ -205,8 +254,7 @@ body{
                 <div class="about-box">03 Responsive Design</div>
             </div>
         </div>
-
-        <div class="row text-center mt-4">
+        <div class="row text-center mt-5">
             <div class="col-md-4">
                 <h3>02+</h3>
                 <p>Years Experience</p>
@@ -220,7 +268,59 @@ body{
                 <p>Clients</p>
             </div>
         </div>
-    </div>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <h2 class="sect-title">Skills</h2>
+        <p class="sect-2">Creating beautiful Websites and flawless codes</p>
+
+        <div class="row g-4 mt-3 text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                   <h5>Core Skills</h5>
+                    <span class="tag">Graphic designing</span>
+                    <span class="tag">Frontend Dev</span>
+                    <span class="tag">Responsive Web design</span>
+                    <span class="tag">Stable</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <h5>Frontend Tech</h5>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                    <span class="tag">BS</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <h5>Design Tools</h5>
+                    <span class="tag">Canva</span>
+                    <span class="tag">Adobe Photoshop</span>
+                    <span class="tag">Figma</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <h5>Tools and Interactions</h5>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Slack</span>
+                    <span class="tag">Sublime Text</span>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center f-sect mt-5">
+            <div class="col-md-12 footer">
+                <h5 class="f-title">Contact Me</h5>
+                <p class="f-text"> Have any Projects?</p>
+            </div>
+            <div class="col-md-12 mt-4">
+                <p class="f-copy">Created by Omeje Chikaima <span> &copy 2026 All Rights Reserved</span></p>
+            </div>
+        </div>
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
